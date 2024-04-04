@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="rendern()">
+    
+    <div class="header">
+        <div class="clip">
+            <div class="top-header">
+                <img src="img/lemon.jpg" alt="">
+                <div class="input-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Suche..." />
+                </div>
+                <a href="tel:+01773240493">
+                    <i class="fas fa-phone"></i> 01773240493
+                </a>
+            </div>
+            <div class="h-text">
+                <h1>JETZT BESTELLEN UND NACH HAUSE LIEFERN </h1>
+                <h2>GENIEßE DEINE LIEBLINGS OBST</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="position">
+
+        <div class="left">
+            <div class="fruits">
+                <div>
+                    <h1>Früchte des Lebens</h1>
+                </div>
+                <div class="evaluation">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <a href="#">(5555 Bewertungen)</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="item" onclick="allFruits()">Alle Obst Sorten</div>
+                <div class="item" onclick="apples()">Äpfel</div>
+                <div class="item" onclick="pears()">Birnen</div>
+                <div class="item" onclick="plum()">Pflaumen</div>
+                <div class="item">Trauben</div>
+            </div>
+
+            <div id="food-container-all"></div>
+            <div id="food-container-apple"></div>
+            <div id="food-container-pear"></div>
+            <div id="food-container-plum"></div>
+
+        </div>
+
+
+        <div class="right">
+
+            <div class="right-text">
+                <h2>Warenkorb</h2>
+            </div>
+            <div id="basket">
+                <div class="display" >
+                    <div class="shopping-cart">
+                        <img src="img/shopping-cart.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Dein Warenkorb ist leer!</h3>
+                    </div>
+                    <div class="text-center">
+                        <span>
+                            Füge Deine Lieblingsdonuts zum Warenkorb hinzu und lasse sie dir noch heute bequem nach
+                            Hause
+                            liefern.
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <span>
+                            Kostenlose Lieferung ab einem Warenwert von 9,95 €
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+          
+                <div id="add-to-basket">         
+
+                    
+                </div>
+            
+
+            
+            <div class="span-margin d-none" id="btn">
+                <div class="space-between">
+                    <span>Zwischensumme</span>
+                    <span id="zwsumme">preis</span>
+                </div>
+                <div class="space-between">
+                    <span>Lieferkosten</span>
+                    <span >4,90€</span>
+                </div>
+                <div class="space-between">
+                    <span><b>Gesamt</b></span>
+                    <span><b id="gesamt">preis</b></span>
+                </div>
+                <button class="button" id="total-sum">Bezahlen (234)</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
