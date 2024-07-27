@@ -7,7 +7,8 @@ body{
     height: 100vh;
     background: url(img/apples.jpg);
     background-size: cover; /* Bildgröße so anpassen, dass es den gesamten Bildschirm bedeckt */
-    background-position: center;    
+    background-position: center;  
+  
 }
 
 .top-header {
@@ -24,6 +25,7 @@ body{
     width: 100px;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 48px;
 }
 
 .top-header a{
@@ -31,6 +33,8 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 18px;
+    margin-right: 48px;
+
      
 }
 
@@ -71,7 +75,17 @@ body{
     justify-content: center;
     color: white;
     font-family: 'Poppins', sans-serif;
+
     }
+
+@media screen and (max-width: 1200px){
+    .h-text{
+        margin-top: 20px;
+        font-size: 15px;
+
+    }
+}
+
 
 .position{
     display: flex; 
@@ -298,4 +312,41 @@ padding-bottom: 8px;
     padding: 20px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.footer{
+    height: 120px;
+    width: 100%;
+    box-shadow: inset 0 0 3rem #476934;
+}
+
+.f-text{
+    display: flex;
+    justify-content: center;
+    margin-right: 64px;
+    margin-left: 64px;
+    padding-top: 32px;
+
+   
+}
+
+.f-text a{
+    margin-right: 32px;
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+}
+
+.f-text a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+.f-text1{
+    color: gray;
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
 }
